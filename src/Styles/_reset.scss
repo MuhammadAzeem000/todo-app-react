@@ -1,0 +1,30 @@
+//basic resets
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+// dynamic classes
+.cut {
+  color: var(--DarkGrayishBlue);
+  text-decoration: line-through;
+}
+
+.active {
+  color: var(--BrightBlue);
+}
+
+.dark {
+  background-image: url("../images/bg-desktop-dark.jpg");
+  background-color: var(--VeryDarkBlue);
+  color: var(--LightGrayishBlue);
+}
+
+.bright {
+  background-image: url("../images/bg-desktop-light.jpg");
+  background-color: var(--VeryLightGray);
+  color: var(--VeryDarkGrayishBlue);
+}

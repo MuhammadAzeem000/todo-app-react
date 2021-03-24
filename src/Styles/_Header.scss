@@ -1,0 +1,44 @@
+.app__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  &__heading {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  &__icon {
+    width: 25px;
+    height: auto;
+  }
+}
+
+.dark {
+  .app__header__icon {
+    background-image: url("../images/icon-sun.svg");
+  }
+}
+
+.bright {
+  .app__header__icon {
+    background-image: url("../images/icon-moon.svg");
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app__header {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .app__header__heading {
+    font-size: 27px;
+    letter-spacing: 5px;
+  }
+
+  .app__header__icon {
+    width: 27px;
+    height: auto;
+  }
+}

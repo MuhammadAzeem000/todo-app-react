@@ -1,0 +1,50 @@
+.app__form {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 5px 13px 4px rgba(119, 119, 119, 0.35);
+  box-shadow: 0px 5px 13px 4px rgba(0, 0, 0, 0.35);
+  &__input {
+    width: 90%;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    caret-color: var(--BrightBlue);
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.dark {
+  .app__form {
+    background-color: var(--VeryDarkBlue);
+    &__input {
+      color: var(--VeryLightGray);
+    }
+  }
+}
+
+.bright {
+  .app__form {
+    background-color: var(--VeryLightGray);
+    &__input {
+      color: var(--VeryDarkBlue);
+    }
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .app__form {
+    padding: 0px 10px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  .app__form__input {
+    font-size: 12px;
+  }
+}

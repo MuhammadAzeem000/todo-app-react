@@ -1,0 +1,85 @@
+.app__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--DarkGrayishBlue);
+  height: 60px;
+  padding: 0px 20px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    & > li:hover {
+      color: var(--LightGrayishBlue);
+      cursor: pointer;
+    }
+    & > li:first-child {
+      color: var(--BrightBlue);
+      cursor: pointer;
+    }
+    & > li:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__left:hover {
+    color: var(--LightGrayishBlue);
+    cursor: pointer;
+  }
+
+  &__clear:hover {
+    color: var(--LightGrayishBlue);
+    cursor: pointer;
+  }
+}
+
+.dark .app__footer {
+  background-color: var(--VeryDarkBlue);
+}
+
+.bright .app__footer {
+  background-color: var(--VeryLightGray);
+  &__list {
+    background-color: var(--VeryLightGray);
+  }
+  &__left:hover {
+    color: var(--VeryDarkBlue);
+  }
+  &__clear:hover {
+    color: var(--VeryDarkBlue);
+  }
+  &__list > li:hover {
+    color: var(--VeryDarkBlue);
+  }
+}
+
+.app__main__footer {
+  font-size: 14px;
+  margin-top: 50px;
+  color: var(--DarkGrayishBlue);
+}
+
+@media screen and (max-width: 493px) {
+  .app__footer {
+    position: relative;
+    color: var(--DarkGrayishBlue);
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 12px;
+  }
+  .app__footer__list {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: var(--VeryDarkBlue);
+    -webkit-box-shadow: 0px 5px 13px 4px rgba(119, 119, 119, 0.35);
+    box-shadow: 0px 5px 13px 4px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    padding: 20px 28%;
+    border-radius: 4px;
+  }
+  .app__main__footer {
+    margin-top: 100px;
+  }
+}
